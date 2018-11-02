@@ -10,16 +10,30 @@ export class InfoPaginaService {
 
   info: InfoPagina = {};
   cargada: boolean = false;
+  equipo: any[] = [];
 
   constructor(private http:HttpClient) {
-    console.log("Servicio de página listo");
-    //leer Json 
-        //obteniendo peticion http de mi pagina json
-        this.http.get("assets/data/data-pagina.json")
+    this.cargarInfo();  
+    this.cargarEquipo();  
+   }
+
+   private cargarInfo(){
+     //obteniendo peticion http de mi pagina json
+     this.http.get("assets/data/data-pagina.json")
+     //Usando el suscribe 
+              .subscribe( (resp: InfoPagina)=> {
+                this.cargada = true;
+                this.info = resp;
+              });
+   }
+
+   private cargarEquipo() {
+        //obteniendo peticion http de mi pagina json mi path es mi url de firebase
+        this.http.get("https://edith-portfolio.firebaseio.com/equipo.json")
         //Usando el suscribe 
-                 .subscribe( (resp: InfoPagina)=> {
+                 .subscribe( (resp:any[])=> {
                    this.cargada = true;
-                   this.info = resp;
+                   this.equipo= resp;
                    console.log(resp);
                  });
    }
