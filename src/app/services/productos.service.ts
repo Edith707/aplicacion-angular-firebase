@@ -7,6 +7,7 @@ import { producto } from '../interfaces/info-productos-interfaces';
 })
 export class ProductosService {
    cargando = true;
+   productos: producto[] = [];
 
   constructor(private http: HttpClient) {
     this.cargarProductos();
@@ -17,6 +18,7 @@ export class ProductosService {
     this.http.get("https://edith-portfolio.firebaseio.com/productos_idx.json")
              .subscribe((resp: producto[]) => {
               console.log(resp)
+              this.productos = resp;
               this.cargando = false;
         });
   }
