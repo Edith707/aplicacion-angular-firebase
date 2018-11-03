@@ -1,0 +1,21 @@
+{
+  "equipo" : [ {
+    "frase" : "Para triunfar, tu sed de victoria tiene que ser mucho mayor que tu miedo al fracaso.",
+    "nombre" : "Carlos Bello",
+    "subtitulo" : "Backend Developer",
+    "twitter" : "@Carlos_bello",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/edith-portfolio.appspot.com/o/team-3.jpg?alt=media&token=df347f8a-4857-4045-98eb-bd36093dc85c"
+  }, {
+    "frase" : "El éxito solo lo tiene aquél que comete un error tras otro y sigue ilusionado como un niño",
+    "nombre" : "Edith López",
+    "subtitulo" : "Frontend Developer",
+    "twitter" : "@Edith707",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/edith-portfolio.appspot.com/o/team-2.jpg?alt=media&token=95e8b9bf-5b0d-4cc3-95c2-a2a20963ff4f"
+  }, {
+    "frase" : "El éxito es gustarte a ti mismo, gustarte lo que haces y gustarte cómo lo haces.",
+    "nombre" : "Miguel Moran",
+    "subtitulo" : "Marketing SEO",
+    "twitter" : "@Miguel_Moran",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/edith-portfolio.appspot.com/o/team-1.jpg?alt=media&token=4d63aff5-43ec-47bb-8852-91ad773d8d73"
+  } ]
+}
